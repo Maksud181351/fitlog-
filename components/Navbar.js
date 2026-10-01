@@ -15,7 +15,7 @@ export default function Navbar() {
         <Link href="/" className="font-display text-lg font-bold tracking-wide">FITLOG</Link>
         <div className="flex gap-2">
           {link("/", "Workouts", path === "/" || path.startsWith("/workout"))}
-          {link("/my-plan", "My Plan", path === "/my-plan")}
+{link("/my-plan", "My Plan", path.startsWith("/my-plan"))}
         </div>
         <Link href="/my-plan" className="flex items-center gap-3 text-xs">
           <span className="flex items-center gap-1.5 font-semibold">Plan
